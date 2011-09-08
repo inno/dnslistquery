@@ -1,0 +1,872 @@
+{
+   "D. D. N. S. B. L." : {
+      "comments" : "Dynamic domain name spoofer",
+      "ddnsbl.internetdefensesystems.com" : {}
+   },
+   "Spamhaus" : {
+      "zen.spamhaus.org" : {
+         "127.0.0.2" : "SBL Advisory",
+         "127.0.0.3" : "CSS Advisory",
+         "127.0.0.4" : "XBL Advisory",
+         "127.0.0.5" : "XBL Advisory",
+         "127.0.0.6" : "XBL Advisory",
+         "127.0.0.7" : "XBL Advisory",
+         "127.0.0.8" : "XBL Advisory",
+         "127.0.0.10" : "PBL Advisory",
+         "127.0.0.11" : "PBL Advisory"
+      }
+   },
+   "China Anti-Spam Alliance" : {
+      "cbl.anti-spam.org.cn" : {
+         "127.0.8.2" : "blacklisted"
+      },
+      "cblplus.anti-spam.org.cn" : {
+         "type" : ["dynamic","blacklist"],
+         "127.0.8.6" : "dynamic AND blacklisted"
+      },
+      "cdl.anti-spam.org.cn" : {
+         "type" : ["dynamic"],
+         "127.0.8.4" : "dynamic IP"
+      },
+      "cml.anti-spam.org.cn" : {
+         "type" : ["whitelist"],
+         "127.0.8.1" : "whitelisted"
+      },
+      "cblless.anti-spam.org.cn" : {
+         "type" : ["dynamic","blacklist"],
+         "127.0.8.5" : "dynamic AND blacklisted but NOT whitelisted"
+      }
+   },
+   "deadbeef" : {
+      "bl.spam.deadbeef.com" : {}
+   },
+   "uceprotect" : {
+      "dnsbl-0.uceprotect.net" : {},
+      "dnsbl-1.uceprotect.net" : {},
+      "dnsbl-2.uceprotect.net" : {},
+      "ips.whitelist.org" : {
+         "type" : ["whitelist"],
+         "default" : "failed (probably not bad)"
+      },
+      "dnsbl-3.uceprotect.net" : {},
+      "ips.backscatterer.org" : {}
+   },
+   "Cymru" : {
+      "origin.asn.cymru.com" : {
+          "type" : ["location"],
+          "default" : "origin"
+      },
+      "peer.asn.cymru.com" : {
+          "type" : ["location"],
+          "default" : "peer"
+      },
+      "bogons.cymru.com" : {},
+      "v4.fullbogons.cymru.com" : {}
+   },
+   "Dan Tor" : {
+      "tor.dan.me.uk" : {
+         "127.0.0.100" : "Tor node"
+      },
+      "torexit.dan.me.uk" : {
+         "127.0.0.100" : "Tor exit node"
+      }
+   },
+   "SORBS" : {
+      "comments" : "Aggregate zone (safe)",
+      "safe.dnsbl.sorbs.net" : {},
+      "comments" : "Aggregate zone (problems)",
+      "problems.dnsbl.sorbs.net" : {},
+      "comments" : "Spam in the last 48 hours",
+      "new.spam.dnsbl.sorbs.net" : {},
+      "comments" : "Spam in the last 28 days",
+      "recent.spam.dnsbl.sorbs.net" : {},
+      "comments" : "Spam supporting service providers",
+      "escalations.dnsbl.sorbs.net" : {},
+      "comments" : "BBFH Level 1 (?)",
+      "l1.bbfh.ext.sorbs.net" : {},
+      "comments" : "BBFH Level 2 (?)",
+      "l2.bbfh.ext.sorbs.net" : {},
+      "comments" : "BBFH Level 3 (?)",
+      "l3.bbfh.ext.sorbs.net" : {},
+      "comments" : "BBFH Level 4 (?)",
+      "l4.bbfh.ext.sorbs.net" : {},
+      "dnsbl.sorbs.net" : {
+         "127.0.0.3" : "open SOCKS proxy",
+         "127.0.0.5" : "open SMTP relay",
+         "127.0.0.6" : "abusable web server",
+         "127.0.0.10" : "dynamic IP",
+         "127.0.0.2" : "open HTTP proxy",
+         "127.0.0.9" : "zombie network",
+         "127.0.0.7" : "spam",
+         "127.0.0.4" : "open, but non-HTTP/SOCKS proxy",
+         "127.0.0.8" : "whitelist"
+      },
+      "rhsbl.sorbs.net" : {
+         "127.0.0.11" : "bad A or MX record",
+         "127.0.0.12" : "no SMTP traffic"
+      }
+   },
+   "Burnt-Tech" : {
+      "dnsbl.burnt-tech.com" : {}
+   },
+   "Composite Blocking List" : {
+      "cbl.abuseat.org" : {}
+   },
+   "Barracuda Networks" : {
+      "b.barracudacentral.org" : {},
+      "bb.barracudacentral.org" : {}
+   },
+   "AHBL" : {
+      "ircbl.ahbl.org" : {},
+      "dnsbl.ahbl.org" : {
+         "127.0.0.11" : "Non-RFC Compliant (missing postmaster or abuse)",
+         "127.0.0.5" : "Provisional Spam Source Listing block (will be removed if spam stops)",
+         "127.0.0.19" : "Open Proxy",
+         "127.0.0.18" : "Compromised System - Other virus",
+         "127.0.0.10" : "Shoot On Sight",
+         "127.0.0.13" : "Other Non-RFC Compliant",
+         "127.0.0.16" : "Compromised System - Autorooter/Scanner",
+         "127.0.0.20" : "Blog/Wiki/Comment Spammer",
+         "127.0.0.12" : "Does not properly handle 5xx errors",
+         "127.0.0.4" : "Spam Source",
+         "127.0.0.3" : "Open Proxy",
+         "127.0.0.14" : "Compromised System - DDoS",
+         "127.0.0.6" : "Formmail Spam",
+         "127.0.0.15" : "Compromised System - Relay",
+         "127.0.0.9" : "End User (non mail system)",
+         "127.0.0.7" : "Spam Supporter",
+         "127.0.0.17" : "Compromised System - Worm or mass mailing virus",
+         "127.0.0.127" : "Other",
+         "127.0.0.8" : "Spam Supporter (indirect)"
+      }
+   },
+   "RBL.JP url" : {
+      "url.rbl.jp" : {}
+   },
+   "arix.com Dictionary Spammers (fresh)" : {
+      "fresh.dict.rbl.arix.com" : {}
+   },
+   "Mailspike Reputation" : {
+      "rep.mailspike.net" : {}
+   },
+   "NiX Spam DNSBL" : {
+      "ix.dnsbl.manitu.net" : {}
+   },
+   "C&CZ's own white list" : {
+      "whitelist.sci.kun.nl" : {
+         "type" : ["whitelist"]
+      }
+   },
+   "countries.nerd.dk DNSBL (zz)" : {
+      "zz.countries.nerd.dk" : {
+          "type" : ["location"],
+          "default" : "origin"
+      }
+   },
+   "Kempt.net DNS Black List" : {
+      "dnsbl.kempt.net" : {}
+   },
+   "IIP Blacklist" : {
+      "lookup.dnsbl.iip.lu" : {}
+   },
+   "McFadden Associates E-mail Blacklist (long timeframe)" : {
+      "sbl.csma.biz" : {}
+   },
+   "abuse.ch Web abuse Tracker" : {
+      "httpbl.abuse.ch" : {}
+   },
+   "abuse.ch combined zone" : {
+      "combined.abuse.ch" : {}
+   },
+   "DRBL work node gremlin.ru" : {
+      "work.drbl.gremlin.ru" : {}
+   },
+   "Route Views Project asn" : {
+      "asn.routeviews.org" : {}
+   },
+   "Habeas Infringer List" : {
+      "hil.habeas.com" : {}
+   },
+   "URIBL red" : {
+      "red.uribl.com" : {}
+   },
+   "0spam DNSBL" : {
+      "0spam.fusionzero.com" : {}
+   },
+   "Mailspike Zero-hour Data" : {
+      "z.mailspike.net" : {}
+   },
+   "inps.de-DNSBL" : {
+      "dnsbl.inps.de" : {}
+   },
+   "rfc-ignorant.org bogusmx" : {
+      "bogusmx.rfc-ignorant.org" : {}
+   },
+   "MSRBL virus" : {
+      "virus.rbl.msrbl.net" : {}
+   },
+   "rfc-ignorant.org whois" : {
+      "whois.rfc-ignorant.org" : {}
+   },
+   "Route Views Project aspath" : {
+      "aspath.routeviews.org" : {}
+   },
+   "SpamCop Blocking List" : {
+      "bl.spamcop.net" : {}
+   },
+   "kundenserver.de relays" : {
+      "relays.bl.kundenserver.de" : {}
+   },
+   "TornevallNET DNSBL" : {
+      "opm.tornevall.org" : {}
+   },
+   "abuse.ch spam blacklist" : {
+      "spam.abuse.ch" : {}
+   },
+   "MSRBL images" : {
+      "images.rbl.msrbl.net" : {}
+   },
+   "NetOp IP geolocation" : {
+      "country.netop.org" : {
+          "type" : ["location"],
+          "default" : "origin"
+      }
+   },
+   "BIT.nl" : {
+      "comment" : "BIT.nl all ascc IPv4 address space list",
+      "all.ascc.dnsbl.bit.nl" : {
+          "type" : ["address"],
+          "default" : "valid address"
+      },
+      "comment" : "Virbl",
+      "virbl.dnsbl.bit.nl" : {},
+      "comment" : "BIT.nl all IPv4 address space list",
+      "all.dnsbl.bit.nl" : {
+          "type" : ["address"],
+          "default" : "valid address"
+      },
+      "comment" : "Virbl whitelist",
+      "nlwhitelist.dnsbl.bit.nl" : {
+         "type" : ["whitelist"],
+         "default" : "dutch isp"
+      }
+   },
+   "abuse.ro RBL" : {
+      "rbl.abuse.ro" : {}
+   },
+   "Unsubscribe Blacklist UBL" : {
+      "ubl.unsubscore.com" : {}
+   },
+   "Blog Spam Blocklist (spamlookup.net)" : {
+      "bsb.spamlookup.net" : {}
+   },
+   "nether.net (unsure)" : {
+      "unsure.nether.net" : {}
+   },
+   "Backscatterer.org" : {
+      "ips.backscatterer.org" : {}
+   },
+   "EFnet RBL" : {
+      "rbl.efnet.org" : {}
+   },
+   "ATLBL RBL" : {
+      "rbl.atlbl.net" : {}
+   },
+   "Woody's SMTP Blacklist URIBL" : {
+      "uri.blacklist.woody.ch" : {}
+   },
+   "NJABL" : {
+      "dnsbl.njabl.org" : {}
+   },
+   "SenderBase\u00c2\u00ae (for SpamAssassin)" : {
+      "sa.senderbase.org" : {}
+   },
+   "nsZones.com SBL" : {
+      "sbl.nszones.com" : {}
+   },
+   "DRBL vote node dsbl.ru" : {
+      "vote.drbldf.dsbl.ru" : {}
+   },
+   "ASPEWS Listings" : {
+      "aspews.ext.sorbs.net" : {}
+   },
+   "DNS-bl in zone" : {
+      "in.dnsbl.org" : {}
+   },
+   "Woody's SMTP Blacklist IPv4" : {
+      "blacklist.woody.ch" : {}
+   },
+   "Bondedsender" : {
+      "query.bondedsender.org" : {}
+   },
+   "rfc-ignorant.org abuse" : {
+      "abuse.rfc-ignorant.org" : {}
+   },
+   "SwiftBL" : {
+      "dnsbl.swiftbl.org" : {}
+   },
+   "rothen.com DynIp" : {
+      "dynip.rothen.com" : {
+          "type" : ["dynamic"]
+      }
+   },
+   "Rymsho's DNSBL" : {
+      "dnsbl.rymsho.ru" : {}
+   },
+   "SpamLab RBL" : {
+      "rbl.spamlab.com" : {}
+   },
+   "arix.com Dictionary Spammers (stale)" : {
+      "stale.dict.rbl.arix.com" : {}
+   },
+   "Pedantic.org spam" : {
+      "spam.pedantic.org" : {}
+   },
+   "nospam.ant.pl" : {
+      "nospam.ant.pl" : {}
+   },
+   "SURBL xs (snowshoe and pill domains)" : {
+      "xs.surbl.org" : {}
+   },
+   "Russian Dial-up User List" : {
+      "dul.ru" : {}
+   },
+   "DRBL proxy node be.net.ru" : {
+      "proxy.drbl.be.net.ru" : {}
+   },
+   "Spam Eating Monkey" : {
+      "comment" : "SEM-FRESH15",
+      "fresh15.spameatingmonkey.net" : {},
+      "comment" : "SEM-ASN-ORIGIN",
+      "origin.asn.spameatingmonkey.net" : {
+           "type" : ["location"],
+          "default" : "origin"
+      },
+      "comment" : "GeoBL (deny all)",
+      "geobl.spameatingmonkey.net" : {},
+      "comment" : "SEM-FRESH",
+      "fresh.spameatingmonkey.net" : {},
+      "comment" : "SEM-URI",
+      "uribl.spameatingmonkey.net" : {},
+      "comment" : "SEM-NETBLACK",
+      "netbl.spameatingmonkey.net" : {},
+      "comment" : "SEM-BLACK",
+      "bl.spameatingmonkey.net" : {},
+      "comment" : "SEM-FRESH10",
+      "fresh10.spameatingmonkey.net" : {},
+      "comment" : "SEM-BACKSCATTER",
+      "backscatter.spameatingmonkey.net" : {},
+      "comment" : "SEM-BADNETS",
+      "badnets.spameatingmonkey.net" : {},
+      "comment" : "SEM-URIRED",
+      "urired.spameatingmonkey.net" : {}
+   },
+   "SpamRATS!" : {
+      "all.spamrats.com" : {},
+      "dyna.spamrats.com" : {
+          "type" : ["dynamic"]
+      },
+      "noptr.spamrats.com" : {},
+      "spam.spamrats.com" : {}
+   },
+   "forbidden.icm.edu.pl" : {
+      "forbidden.icm.edu.pl" : {}
+   },
+   "Rymsho's RHSBL" : {
+      "rhsbl.rymsho.ru" : {}
+   },
+   "NJABL bhnc (bad host, no cookie)" : {
+      "bhnc.njabl.org" : {}
+   },
+   "MSRBL web" : {
+      "web.rbl.msrbl.net" : {}
+   },
+   "EFnet TOR" : {
+      "tor.efnet.org" : {}
+   },
+   "AnonWhois.org" : {
+      "list.anonwhois.net" : {}
+   },
+   "choon.net RWL" : {
+      "rwl.choon.net" : {}
+   },
+   "ORBITrbl" : {
+      "rbl.orbitrbl.com" : {}
+   },
+   "sectoor TOR blacklist" : {
+      "tor.dnsbl.sectoor.de" : {}
+   },
+   "proxyBL" : {
+      "dnsbl.proxybl.org" : {}
+   },
+   "Redhawk.org" : {
+      "access.redhawk.org" : {}
+   },
+   "hartkore.dnsbl" : {
+      "hartkore.dnsbl.tuxad.de" : {}
+   },
+   "Leadmon.Net's SpamGuard Listings (LNSG)" : {
+      "spamguard.leadmon.net" : {}
+   },
+   "BBFH Level 1" : {
+      "list.bbfh.org" : {}
+   },
+   "Hostkarma" : {
+      "hostkarma.junkemailfilter.com" : {
+            "type" : ["whitelist"],
+            "127.0.0.1" : "whitelisted",
+            "127.0.0.2" : "blacklisted",
+            "127.0.0.3" : "yellowlisted",
+            "127.0.0.4" : "brownlisted",
+            "127.0.0.5" : "not spam source",
+            "127.0.1.1" : "QUIT used - good",
+            "127.0.1.2" : "QUIT not used - bad",
+            "127.0.1.3" : "QUIT used sometimes",
+            "127.0.2.1" : "first saw 24-48 hours ago",
+            "127.0.2.2" : "first saw 10 days ago",
+            "127.0.2.3" : "first saw over 10 days ago"
+      },
+      "nobl.junkemailfilter.com" : {
+            "type" : ["whitelist"],
+            "127.0.0.1" : "whitelisted",
+            "127.0.0.3" : "yellowlisted",
+            "127.0.0.5" : "not spam source"
+      }
+   },
+   "DRBL vote node gremlin.ru" : {
+      "vote.drbl.gremlin.ru" : {}
+   },
+   "URIBL grey" : {
+      "grey.uribl.com" : {}
+   },
+   "BBQ" : {
+      "niku.2ch.net" : {}
+   },
+   "ISIPP Accreditation Database (IADB2)" : {
+      "iadb2.isipp.com" : {}
+   },
+   "rfc-ignorant.org DSN (&lt;&gt;)" : {
+      "dsn.rfc-ignorant.org" : {}
+   },
+   "ANTISPAM-UFRJ orvedb" : {
+      "orvedb.aupads.org" : {}
+   },
+   "510 Software Group Blackholes" : {
+      "blackholes.five-ten-sg.com" : {}
+   },
+   "TRBL" : {
+      "spamtrap.trblspam.com" : {}
+   },
+   "The Day Old Bread List (aka DOB)" : {
+      "dob.sibl.support-intelligence.net" : {}
+   },
+   "DRBL vote node be.net.ru" : {
+      "vote.drbl.be.net.ru" : {}
+   },
+   "RBL.JP all" : {
+      "all.rbl.jp" : {}
+   },
+   "dnsbl.mags.net" : {
+      "dnsbl.mags.net" : {}
+   },
+   "DNS-bl ex zone" : {
+      "ex.dnsbl.org" : {}
+   },
+   "nether.net (relays)" : {
+      "relays.nether.net" : {}
+   },
+   "abusix.org Abuse Contact DB" : {
+      "abuse-contacts.abusix.org" : {
+          "type" : ["abuse"],
+          "default" : "abuse contact"
+      }
+   },
+   "APEWS Level 1" : {
+      "l1.apews.org" : {}
+   },
+   "Abuse.net" : {
+      "contacts.abuse.net" : {
+          "type" : ["abuse"],
+          "default" : "abuse contact"
+      }
+   },
+   "Blog Spam Blocklist (empty.us)" : {
+      "bsb.empty.us" : {}
+   },
+   "SpamCannibal" : {
+      "bl.spamcannibal.org" : {}
+   },
+   "IPQuery.org backscat" : {
+      "backscat.dnsl.ipquery.org" : {}
+   },
+   "PSBL (Passive Spam Block List)" : {
+      "psbl.surriel.com" : {}
+   },
+   "DNSWL.org" : {
+      "comments" : "farking rediculous",
+      "list.dnswl.org" : {
+          "type" : ["whitelist"],
+          "127.0.2.0" : "whitelisted no-trust fiancial service",
+          "127.0.3.0" : "whitelisted no-trust email service provider",
+          "127.0.4.0" : "whitelisted no-trust organization",
+          "127.0.5.0" : "whitelisted no-trust service/network provider",
+          "127.0.6.0" : "whitelisted no-trust personal/private server",
+          "127.0.7.0" : "whitelisted no-trust travel/leisure industry",
+          "127.0.8.0" : "whitelisted no-trust public sector/government",
+          "127.0.9.0" : "whitelisted no-trust media and tech company",
+          "127.0.10.0" : "whitelisted no-trust special case",
+          "127.0.11.0" : "whitelisted no-trust education",
+          "127.0.12.0" : "whitelisted no-trust healthcare",
+          "127.0.13.0" : "whitelisted no-trust manufacturing/industrial",
+          "127.0.14.0" : "whitelisted no-trust retail/wholesale/service",
+          "127.0.15.0" : "whitelisted no-trust email marketing",
+          "127.0.2.1" : "whitelisted low-trust fiancial service",
+          "127.0.3.1" : "whitelisted low-trust email service provider",
+          "127.0.4.1" : "whitelisted low-trust organization",
+          "127.0.5.1" : "whitelisted low-trust service/network provider",
+          "127.0.6.1" : "whitelisted low-trust personal/private server",
+          "127.0.7.1" : "whitelisted low-trust travel/leisure industry",
+          "127.0.8.1" : "whitelisted low-trust public sector/government",
+          "127.0.9.1" : "whitelisted low-trust media and tech company",
+          "127.0.10.1" : "whitelisted low-trust special case",
+          "127.0.11.1" : "whitelisted low-trust education",
+          "127.0.12.1" : "whitelisted low-trust healthcare",
+          "127.0.13.1" : "whitelisted low-trust manufacturing/industrial",
+          "127.0.14.1" : "whitelisted low-trust retail/wholesale/service",
+          "127.0.15.1" : "whitelisted low-trust email marketing",
+          "127.0.2.2" : "whitelisted medium-trust fiancial service",
+          "127.0.3.2" : "whitelisted medium-trust email service provider",
+          "127.0.4.2" : "whitelisted medium-trust organization",
+          "127.0.5.2" : "whitelisted medium-trust service/network provider",
+          "127.0.6.2" : "whitelisted medium-trust personal/private server",
+          "127.0.7.2" : "whitelisted medium-trust travel/leisure industry",
+          "127.0.8.2" : "whitelisted medium-trust public sector/government",
+          "127.0.9.2" : "whitelisted medium-trust media and tech company",
+          "127.0.10.2" : "whitelisted medium-trust special case",
+          "127.0.11.2" : "whitelisted medium-trust education",
+          "127.0.12.2" : "whitelisted medium-trust healthcare",
+          "127.0.13.2" : "whitelisted medium-trust manufacturing/industrial",
+          "127.0.14.2" : "whitelisted medium-trust retail/wholesale/service",
+          "127.0.15.2" : "whitelisted medium-trust email marketing",
+          "127.0.2.3" : "whitelisted high-trust fiancial service",
+          "127.0.3.3" : "whitelisted high-trust email service provider",
+          "127.0.4.3" : "whitelisted high-trust organization",
+          "127.0.5.3" : "whitelisted high-trust service/network provider",
+          "127.0.6.3" : "whitelisted high-trust personal/private server",
+          "127.0.7.3" : "whitelisted high-trust travel/leisure industry",
+          "127.0.8.3" : "whitelisted high-trust public sector/government",
+          "127.0.9.3" : "whitelisted high-trust media and tech company",
+          "127.0.10.3" : "whitelisted high-trust special case",
+          "127.0.11.3" : "whitelisted high-trust education",
+          "127.0.12.3" : "whitelisted high-trust healthcare",
+          "127.0.13.3" : "whitelisted high-trust manufacturing/industrial",
+          "127.0.14.3" : "whitelisted high-trust retail/wholesale/service",
+          "127.0.15.3" : "whitelisted high-trust email marketing"
+      }
+   },
+   "Pedantic.org netblock" : {
+      "netblock.pedantic.org" : {}
+   },
+   "URIBL black" : {
+      "black.uribl.com" : {}
+   },
+   "DNS-SERVICIOS RBL" : {
+      "rbl.dns-servicios.com" : {}
+   },
+   "EFnet RBL mirror" : {
+      "rbl.efnetrbl.org" : {}
+   },
+   "Blog Spam Blacklist" : {
+      "list.blogspambl.com" : {}
+   },
+   "truncate.gbudb.net" : {
+      "truncate.gbudb.net" : {}
+   },
+   "ISIPP Accreditation Database (WADB)" : {
+      "wadb.isipp.com" : {}
+   },
+   "MSRBL phishing" : {
+      "phishing.rbl.msrbl.net" : {}
+   },
+   "Bondedsender plus" : {
+      "plus.bondedsender.org" : {}
+   },
+   "PSBL whitelist" : {
+      "whitelist.surriel.com" : {
+         "type" : ["whitelist"]
+      }
+   },
+   "WebEquipped.com block list" : {
+      "dnsbl.webequipped.com" : {}
+   },
+   "DRBL work node dsbl.ru" : {
+      "work.drbldf.dsbl.ru" : {}
+   },
+   "IPQuery.org relay" : {
+      "relay.dnsl.ipquery.org" : {}
+   },
+   "ZapBL DNSRBL" : {
+      "dnsbl.zapbl.net" : {}
+   },
+   "WPBL - Weighted Private Block List" : {
+      "db.wpbl.info" : {}
+   },
+   "Technovision Spamsource List" : {
+      "bl.technovision.dk" : {}
+   },
+   "nsZones.com SBL+Dyn" : {
+      "bl.nszones.com" : {}
+   },
+   "TRIUMF.ca DNSBL" : {
+      "rbl2.triumf.ca" : {}
+   },
+   "InterServer BL" : {
+      "rbl.interserver.net" : {}
+   },
+   "SpamLab FEB" : {
+      "feb.spamlab.com" : {}
+   },
+   "Mailspike Whitelist" : {
+      "wl.mailspike.net" : {}
+   },
+   "DRBL devnull node be.net.ru" : {
+      "devnull.drbl.be.net.ru" : {}
+   },
+   "0spam KillList" : {
+      "0spam-killlist.fusionzero.com" : {}
+   },
+   "NJABL combined" : {
+      "combined.njabl.org" : {}
+   },
+   "no-more-funn" : {
+      "no-more-funn.moensted.dk" : {}
+   },
+   "ISIPP Accreditation Database" : {
+      "iadb.isipp.com" : {}
+   },
+   "dnsbl.othello.ch" : {
+      "dnsbl.othello.ch" : {}
+   },
+   "fnrbl.fast.net" : {
+      "fnrbl.fast.net" : {}
+   },
+   "SenderScore" : {
+      "bl.score.senderscore.com" : {}
+   },
+   "nether.net (trusted)" : {
+      "trusted.nether.net" : {}
+   },
+   "SenderBase\u00c2\u00ae" : {
+      "query.senderbase.org" : {}
+   },
+   "Swinog URIBL" : {
+      "uribl.swinog.ch" : {}
+   },
+   "Spamanalysis.org GeoBL (deny all)" : {
+      "geobl.spamanalysis.org" : {}
+   },
+   "nsZones.com SURBL" : {
+      "ubl.nszones.com" : {}
+   },
+   "ZoneEdit deny DNS services domains" : {
+      "ban.zebl.zoneedit.com" : {}
+   },
+   "www.blocklist.de" : {
+      "bl.blocklist.de" : {}
+   },
+   "BBM" : {
+      "bbm.2ch.net" : {}
+   },
+   "JIPPG's RBL Project (mail-abuse Listings)" : {
+      "mail-abuse.blacklist.jippg.org" : {}
+   },
+   "Intercept DNS Blacklist" : {
+      "intercept.datapacket.net" : {}
+   },
+   "DRBL vote node caravan.ru" : {
+      "vote.drbl.caravan.ru" : {}
+   },
+   "IPQuery.org any" : {
+      "any.dnsl.ipquery.org" : {}
+   },
+   "TRIUMF.ca DNSWL" : {
+      "wbl.triumf.ca" : {}
+   },
+   "nsZones.com Dyn" : {
+      "dyn.nszones.com" : {
+          "type" : ["dynamic"]
+      }
+   },
+   "ZoneEdit combined RHSBL" : {
+      "zebl.zoneedit.com" : {}
+   },
+   "MW-Internet RBL" : {
+      "rbl.mw-internet.net" : {}
+   },
+   "Habeas User List" : {
+      "hul.habeas.com" : {}
+   },
+   "DRBL work node caravan.ru" : {
+      "work.drbl.caravan.ru" : {}
+   },
+   "arix.com Slippers (stale)" : {
+      "stale.sa_slip.arix.com" : {}
+   },
+   "RBL.JP dyndns domains" : {
+      "dyndns.rbl.jp" : {
+          "type" : ["dynamic"]
+      }
+   },
+   "choon.net RBL" : {
+      "rbl.choon.net" : {}
+   },
+   "SURBL multi (Combined SURBL list)" : {
+      "multi.surbl.org" : {}
+   },
+   "dnsbl.rv-soft.info" : {
+      "dnsbl.rv-soft.info" : {}
+   },
+   "ISIPP Accreditation Database (IDDB)" : {
+      "iddb.isipp.com" : {}
+   },
+   "emailbasura.org" : {
+      "bl.emailbasura.org" : {}
+   },
+   "Rizon RBL/DNSBL" : {
+      "dnsbl.rizon.net" : {}
+   },
+   "MSRBL combined" : {
+      "combined.rbl.msrbl.net" : {}
+   },
+   "Mailspike Blacklist" : {
+      "bl.mailspike.net" : {}
+   },
+   "DroneBL" : {
+      "dnsbl.dronebl.org" : {}
+   },
+   "Swinog DNSRBL" : {
+      "dnsrbl.swinog.ch" : {}
+   },
+   "SurGATE Reputation Network (SRN)" : {
+      "srn.surgate.net" : {}
+   },
+   "IPQuery.org single" : {
+      "single.dnsl.ipquery.org" : {}
+   },
+   "APEWS Level 2" : {
+      "l2.apews.org" : {}
+   },
+   "ANTISPAM-UFRJ rsbl" : {
+      "rsbl.aupads.org" : {}
+   },
+   "spamsources.fabel.dk" : {
+      "spamsources.fabel.dk" : {}
+   },
+   "Habeas SafeList" : {
+      "accredit.habeas.com" : {}
+   },
+   "abuse.ch FastFlux Tracker" : {
+      "drone.abuse.ch" : {}
+   },
+   "McFadden Associates E-mail Blacklist (short timeframe)" : {
+      "bl.csma.biz" : {}
+   },
+   "IPQuery.org netblock" : {
+      "netblock.dnsl.ipquery.org" : {}
+   },
+   "Tiopan Consulting Blacklist" : {
+      "bl.tiopan.com" : {}
+   },
+   "rbl.schulte.org" : {
+      "rbl.schulte.org" : {}
+   },
+   "Trusted Forwarder SPF Global Whitelist" : {
+      "wl.trusted-forwarder.org" : {}
+   },
+   "TechnoVision SpamTrap" : {
+      "st.technovision.dk" : {}
+   },
+   "inps.de-DNSWL" : {
+      "dnswl.inps.de" : {}
+   },
+   "rfc-ignorant.org postmaster" : {
+      "postmaster.rfc-ignorant.org" : {}
+   },
+   "Habeas SafeList (for SpamAssassin)" : {
+      "sa-accredit.habeas.com" : {}
+   },
+   "South Korean Network Blocking List" : {
+      "korea.services.net" : {}
+   },
+   "Habeas User List (including Non-Verified-Optin)" : {
+      "sohul.habeas.com" : {}
+   },
+   "URIBL white" : {
+      "white.uribl.com" : {}
+   },
+   "URIBL multi" : {
+      "multi.uribl.com" : {}
+   },
+   "Madavi:BL" : {
+      "dnsbl.madavi.de" : {}
+   },
+   "RBL.JP virus" : {
+      "virus.rbl.jp" : {}
+   },
+   "arix.com Slippers (fresh)" : {
+      "fresh.sa_slip.rbl.arix.com" : {}
+   },
+   "ATLBL HBL" : {
+      "hbl.atlbl.net" : {}
+   },
+   "ImproWare IP based spamlist" : {
+      "spamrbl.imp.ch" : {}
+   },
+   "ZapBL RHSBL" : {
+      "rhsbl.zapbl.net" : {}
+   },
+   "Solid.net DNSBL" : {
+      "dnsbl.solid.net" : {}
+   },
+   "RBL.JP short" : {
+      "short.rbl.jp" : {}
+   },
+   "BBX" : {
+      "bbx.2ch.net" : {}
+   },
+   "SpamChampuru DNSBL" : {
+      "dnsbl.spam-champuru.livedoor.com" : {}
+   },
+   "ImproWare IP based wormlist" : {
+      "wormrbl.imp.ch" : {}
+   },
+   "MSRBL spam" : {
+      "spam.rbl.msrbl.net" : {}
+   },
+   "sectoor TOR blacklist (exit nodes)" : {
+      "exitnodes.tor.dnsbl.sectoor.de" : {}
+   },
+   "C&amp;CZ's own black list" : {
+      "blacklist.sci.kun.nl" : {}
+   },
+   "Quorum.to" : {
+      "list.quorum.to" : {
+          "127.0.0.0" : "noop"
+      }
+   },
+   "nsZones.com DNSWL" : {
+      "wl.nszones.com" : {}
+   },
+   "KISA-RBL" : {
+      "spamlist.or.kr" : {}
+   },
+   "ATLBL ABL" : {
+      "access.atlbl.net" : {}
+   },
+   "Whitelisted.org" : {
+      "ips.whitelisted.org" : {
+         "type" : ["whitelist"]
+      }
+   }
+}
+

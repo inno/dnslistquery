@@ -1,0 +1,18 @@
+An event-based scriptable tool designed to (initially) check if an IP is on a blacklist.
+
+While the current list is rather large, feel free to use your own.
+
+Using dl_query.pl in a script:
+
+    #!/bin/bash
+
+    ./dl_query.pl $(hostname -i) > /dev/null
+
+    if [ $? != 0 ]; then
+        echo "We have a problem!"
+    fi
+
+
+Using dl_query.pl manually:
+
+    ./dl_query.pl 74.125.113.27 | grep -v '^ok'
