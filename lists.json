@@ -1,7 +1,6 @@
 {
-   "D. D. N. S. B. L." : {
-      "comments" : "Dynamic domain name spoofer",
-      "ddnsbl.internetdefensesystems.com" : {}
+   "v4BL.org" : {
+      "FREE.v4BL.org": {}
    },
    "Spamhaus" : {
       "zen.spamhaus.org" : {
