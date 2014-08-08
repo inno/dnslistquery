@@ -227,9 +227,6 @@
    "IIP Blacklist" : {
       "lookup.dnsbl.iip.lu" : {}
    },
-   "McFadden Associates E-mail Blacklist (long timeframe)" : {
-      "sbl.csma.biz" : {}
-   },
    "abuse.ch Web abuse Tracker" : {
       "httpbl.abuse.ch" : {}
    },
