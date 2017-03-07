@@ -693,9 +693,6 @@
    "Swinog URIBL" : {
       "uribl.swinog.ch" : {}
    },
-   "Spamanalysis.org GeoBL (deny all)" : {
-      "geobl.spamanalysis.org" : {}
-   },
    "nsZones.com SURBL" : {
       "ubl.nszones.com" : {}
    },
