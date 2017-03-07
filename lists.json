@@ -530,6 +530,9 @@
    "PSBL (Passive Spam Block List)" : {
       "psbl.surriel.com" : {}
    },
+   "DNSRBL" : {
+      "dnsrbl.org" : {}
+   },
    "DNSWL.org" : {
       "comments" : "farking rediculous",
       "list.dnswl.org" : {
