@@ -170,9 +170,13 @@ POE::Session->create(
             }
 
             foreach my $answer (@answers) {
+                my $rdatastr = $answer->rdatastr();
                 if ($answer->type eq 'TXT') {
-                    if (defined $answer->rdatastr()) {
-                        $heap->{'result_notes'}{$request_address} = $answer->rdatastr();
+                    if (defined $rdatastr) {
+                        if ($rdatastr =~ /v=spf\d/) {
+                            $rdatastr = "DEAD? Service responded with SPF: '${rdatastr}'";
+                        }
+                        $heap->{'result_notes'}{$request_address} = $rdatastr;
                     }
                     next;
                 }
@@ -181,7 +185,7 @@ POE::Session->create(
                 }
                 $heap->{answers}++;
 
-                my $result = responder($request_address, $answer->rdatastr());
+                my $result = responder($request_address, $rdatastr);
                 push @{$heap->{results}{$result}}, $request_address;
                 if ($result !~ /ok$/o) {
                     $kernel->yield("query_txt", $request_address);
