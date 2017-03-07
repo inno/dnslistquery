@@ -485,9 +485,6 @@
    "510 Software Group Blackholes" : {
       "blackholes.five-ten-sg.com" : {}
    },
-   "TRBL" : {
-      "spamtrap.trblspam.com" : {}
-   },
    "The Day Old Bread List (aka DOB)" : {
       "dob.sibl.support-intelligence.net" : {}
    },
@@ -731,9 +728,6 @@
    "ZoneEdit combined RHSBL" : {
       "zebl.zoneedit.com" : {}
    },
-   "MW-Internet RBL" : {
-      "rbl.mw-internet.net" : {}
-   },
    "Habeas User List" : {
       "hul.habeas.com" : {}
    },
@@ -799,9 +793,6 @@
    "abuse.ch FastFlux Tracker" : {
       "drone.abuse.ch" : {}
    },
-   "McFadden Associates E-mail Blacklist (short timeframe)" : {
-      "bl.csma.biz" : {}
-   },
    "IPQuery.org netblock" : {
       "netblock.dnsl.ipquery.org" : {}
    },
@@ -855,9 +846,6 @@
    },
    "ZapBL RHSBL" : {
       "rhsbl.zapbl.net" : {}
-   },
-   "Solid.net DNSBL" : {
-      "dnsbl.solid.net" : {}
    },
    "RBL.JP short" : {
       "short.rbl.jp" : {}
