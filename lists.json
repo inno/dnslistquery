@@ -200,9 +200,6 @@
    "Kempt.net DNS Black List" : {
       "dnsbl.kempt.net" : {}
    },
-   "IIP Blacklist" : {
-      "lookup.dnsbl.iip.lu" : {}
-   },
    "abuse.ch Web abuse Tracker" : {
       "httpbl.abuse.ch" : {}
    },
