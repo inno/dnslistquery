@@ -36,9 +36,6 @@
          "127.0.8.5" : "dynamic AND blacklisted but NOT whitelisted"
       }
    },
-   "deadbeef" : {
-      "bl.spam.deadbeef.com" : {}
-   },
    "uceprotect" : {
       "dnsbl-0.uceprotect.net" : {},
       "dnsbl-1.uceprotect.net" : {},
